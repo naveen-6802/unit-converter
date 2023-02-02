@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Unit Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="header">
+            <center><h3>Metric/Imperial Unit Conversion</h3></center>
+            <div id="userField">
+                <input type="field" placeholder="0" id="input-el">
+                <button id="cnv">Convert</button>
+                <button id="rst">Reset</button>
+            </div>
+        </div>
+        <br/>
+        <center><span id="error">Please enter a value in input field to continue</span></center>
+        <div id="groups">
+            <div class="group">
+                <h4>Length(Meter/Feet)</h4>
+                <span id="len"></span>
+            </div>
+            <div class="group">
+                <h4>Volume(Litres/Gallons)</h4>
+                <span id="vol"></span>
+            </div>
+            <div class="group">
+                <h4>Mass(Kilograms/Pounds)</h4>
+                <span id="mass"></span>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
