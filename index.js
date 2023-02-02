@@ -46,8 +46,11 @@ rst.addEventListener("click", function() {
 
 cnv.addEventListener("click", function() {
     
-    if(inputEl.value === "" || inputEl.value === 0) {
+    if(inputEl.value === "" || inputEl.value === "0") {
         err.style.display = "inline";
+        len.innerHTML = "";
+        vol.innerHTML = "";
+        mass.innerHTML = "";
         setTimeout(function() {
             err.style.display = "none";
         }, 800)
